@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Paige{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+  <div class="content">
+    <div class="columns">
+    <div class ="column">
+      <img src="/static/PythonGoddess.png" alt="Profile Picture" class="profile_pic">
+      <p class="description">Paige Python Goddess.</p>
+    </div>
+    
+      
+      <div class ="column"><h1 class="heading">Projects by Paige</h1>
+      <p class="description">This is site shares my results from some starter projects.</p>
+      </div>
+    </div>
+  
+  <h2 class="subheading"><a href="/js_jokes">Dad Jokes</a> </h2>
+  <p>This is a project from     
+    <a href="https://www.oreilly.com/library/view/50-projects-in/9781801079976/?_gl=1*xbqgu4*_ga*MTk5NDY2Mzc4OC4xNzI1MDU1MDE2*_ga_092EL089CH*MTcyNTA1NTAxNi4xLjEuMTcyNTA1NTAzMC40Ni4wLjA.">50 Projects in 50 Days - HTML, CSS, and JavaScript by Brad Traversy, Florin Pop</a>.</p>
+
+  <p>I'm still early in my journey to learn css and JavaScript.  The css and js  here is taken directly from the step by step project instructions.</p>
+  <p>To publish this on the web, I used my mad Python skills to create a Flask app.  For practice, I rewrote the JavaScript portion using the Requests module. In this version of <a href="/flask_jokes">Dad Jokes v2</a> the page reloads each time you request a new joke. </p>
+  <p>A special thanks to Angela Yu's teaching in
+   <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=OF83024F">100 Days of Code: The Complete Python Pro Bootcamp</a>, which enabled me to develop my Python skills.
+  </p>
+
+  <h2 class="subheading">More Projects Coming Soon</h2>
+  <p>I plan to make additional projects available here weekly.</p>
+  <h2 class="subheading">More about Paige</h2>
+  <p>I'll put a link to github repo for this site here.</p>
+  <p>Find me on linkedin.</p>
+</div>
+</div>
+<script src="{{ url_for('static', filename='jokes_script.js') }}"></script>
+{% endblock %}

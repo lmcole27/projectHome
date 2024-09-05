@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700');
+
+ * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', san-serif;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* CSS Flexbox approach */
+.columns {
+    display: flex;
+    justify-content: space-between; /* Ensures there's space between the columns */
+    gap: 20px; /* Optional: space between columns */
+  }
+  
+  .column {
+    flex: 1; /* Makes columns equal width */
+    padding: 20px;
+  }
+
+
+.container {
+    background-color: #fafafa;
+    transform-origin:top left;
+    transition: transform 0.5 linear;
+    transition: transform 0.4s ease;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* CSS for round profile pic */
+.profile_pic {
+    position: relative;
+    align-self: center;
+    /* top: 20px;      Adjust this to position the profile picture vertically */
+    /* left: 20px;     Adjust this to position the profile picture horizontally */
+    width: 200px;   /* Adjust this to change the size of the picture */
+    height: 200px;  /* Match the width to make it a square */
+    border-radius: 50%;  /* This makes the picture round */
+    object-fit: cover;   /* Ensures the image covers the container without distortion */
+    border: 2px solid #fff; /* Optional: Add a border, adjust color and size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for some depth */
+  }
+  
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+   }
+
+
+h1 {
+    position: relative;
+    margin-top: 1.5em;
+    font-family: 'Arsenal';
+    font-size: 3em;
+    letter-spacing: 2px;
+    }
+
+h2 {
+    margin-top: 2em;
+    font-size: 1.5em;
+    }
+
+p   {
+    margin-bottom: 1em;
+    }
+  
+a:link {
+    text-decoration: none;
+    color: #008080;
+    }
+      
+a:visited {
+    text-decoration: none;
+    color: #6A5ACD;
+    }
+      
+a:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+    }
+      
+a:active {
+    text-decoration: underline;
+    }
